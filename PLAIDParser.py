@@ -54,7 +54,7 @@ def numericalSort(value):
     parts = numbers.split(value)
     parts[1::2] = map(int, parts[1::2])
     return parts
-files = sorted(glob("/user/work/xh21734/Intern/Data/PLAID/2017/*"), key=numericalSort) #this is the folder that PLAID data is saved to
+files = sorted(glob("XYZ/PLAID/2017/*"), key=numericalSort) #this is the folder that PLAID data is saved to -> CHANGE THIS!!
 good_labels = []
 extracted_data = []
 
@@ -95,7 +95,7 @@ plaid_good_labels = np.take(good_labels,plaid_labels_index,axis=0)
 #data_and_labels = np.hstack((good_labels.reshape((-1, 1)), extracted_data[:, :, 1].astype(np.float32)))
 AC_curr_data = plaid_good_data[:, :, 1].astype(np.float32)
 RMS_curr_data = plaid_good_data[:, :, 3].astype(np.float32)
-save_path = "/user/work/xh21734/Intern/TestData/Basic_Run/"
+save_path = "" # CHANGE THIS
 
 
 #np.save((save_path + "PLAID_5000Hz_AC_data.npy"), AC_curr_data)
