@@ -1,4 +1,4 @@
-import reading_plaid_meta as rpm
+import ReadingPLAIDMeta as rpm
 import numpy as np
 import pandas as pd
 from glob import glob
