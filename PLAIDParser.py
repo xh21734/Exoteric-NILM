@@ -9,10 +9,7 @@ import os
 import soundfile as sf
 import time
 
-#WHITED & PLAID Class Names
-whited_classes = np.array(['AC', 'CFL', 'Fan', 'Fridge', 'HairDryer',
-                            'Heater', 'LightBulb', 'Laptop', 'Microwave', 'VacuumCleaner',
-                            'WashingMachine'])
+# PLAID Class Names
 plaid_classes = np.array(['Air Conditioner', 'Compact Fluorescent Lamp', 'Fan', 'Fridge', 'Hairdryer',
                             'Heater', 'Incandescent Light Bulb', 'Laptop', 'Microwave', 'Vacuum',
                             'Washing Machine'])
