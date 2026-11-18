@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 from glob import glob
 import re
-import data_augmentation_funcs as aug
+import AugmentationFunctions as aug
 import scipy
 import os
 import soundfile as sf
