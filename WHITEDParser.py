@@ -102,7 +102,7 @@ curr_vol = []
 
 
 #os.chdir("/user/work/xh21734/Intern/Data/WHITED/")
-for file in glob("/user/work/xh21734/Intern/Data/WHITED/*.flac"): #WHITED folder containing .flac files
+for file in glob("XYZ/WHITED/*.flac"): #WHITED folder containing .flac files -> CHANGE THIS
     dataset = sf.SoundFile(file)
     data = pd.DataFrame(dataset.read(), columns = ("voltage", "current")) #data contains voltage in 1st column, and current in 2nd column
     dataset.close() #just being good and closing the file
@@ -159,7 +159,7 @@ whited_RMS_labels = np.delete(whited_good_labels[:, 0], whited_mask, axis=0)
 #np.save((save_path + "WHITED_5000Hz_RMS_data.npy"), whited_RMS_data)
 #np.save((save_path + "WHITED_5000Hz_RMS_labels.npy"), whited_RMS_labels)
 #loading whited data and labels
-save_path = "/user/work/xh21734/Intern/TestData/Basic_Run/"
+save_path = "" # CHANGE THIS
 
 #whited_labels = np.load((save_path + "WHITED_5000Hz_labels.npy"), allow_pickle=True)
 def change_whited_freq(old_freq, new_freq, data):
